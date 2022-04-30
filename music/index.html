@@ -2,6 +2,26 @@
 <html>
     <head>
         <title>audio visualizer with audio element</title>
+        <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" /> 
+<style>
+#playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:white;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+     #audioPlayer{}
+  
+  audio::-webkit-media-controls-timeline { display:inline-flex;}
+  
+    audio::-webkit-media-controls-panel {background-color: #00CED1;}
+  </style>
+
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -10,7 +30,7 @@
         <canvas id='canvas' width="800" height="350"></canvas>
         <br>
         <br>
-        <audio src="assets/sample.mp3" id="audio" controls >audio element not supported</audio>
+        <audio src="assets/07DireStraits-SoFarAway.mp3" id="audio" controls >audio element not supported</audio>
         <script src="main.js"></script>
     </body>
     <script>
