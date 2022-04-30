@@ -69,7 +69,7 @@ var start = function() {
         requestAnimationFrame(renderFrame);
     }
     renderFrame();
-    // audio.play();
+    audio.play();
 };
 
 audio.onplay = function(){
