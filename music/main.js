@@ -14,6 +14,7 @@
  * reference: http://www.patrick-wied.at/blog/how-to-create-audio-visualizations-with-javascript-html
  */
 
+
 window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 
 var start = function() {
